@@ -1,0 +1,94 @@
+html{
+    font-size: 16px;
+    width: 100%;
+}
+
+header{
+    height: 4rem;
+    padding: 0.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo img{
+    height: 80%;
+}
+
+.logo .first_part{
+    font-weight: bold;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a{
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.banner{
+    background-color: darkgray;
+    display: flex;
+    height: 30rem;
+}
+
+.sixty {
+    width: 60%;
+}
+
+.forty {
+    width: 40%;
+}
+
+.banner_logo{
+    padding: 2rem 1.5rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .forty{
+    display: flex;
+    align-items: center;
+}
+
+.forty .head_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+}
+
+h1 {
+   font-size: 3rem;
+   font-weight: bold;
+   padding: 1rem 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+
