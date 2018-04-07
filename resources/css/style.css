@@ -66,6 +66,11 @@ nav a{
     padding: 0.5rem;
 }
 
+.mobile_nav{
+    display: none;
+}
+
+
 .banner{
     background-color: grey;
 }
@@ -75,6 +80,11 @@ nav a{
 }
 
 img{
+    width: 100%;
+    height: auto;
+}
+
+video {
     width: 100%;
     height: auto;
 }
@@ -107,6 +117,7 @@ img{
 .big_post{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* Small posts */
@@ -118,12 +129,15 @@ img{
 
 .post {
     display: flex;
-    border: 1px grey solid;
 }
 
 .image_container{
     width: 35%;
-    margin: 1rem;
+    padding: 1rem;
+}
+
+.mobile_image_container {
+    display: none;
 }
 
 .post_content{
@@ -144,19 +158,194 @@ img{
 
 /* Courses section */
 
+.courses_mobile{
+    display: none;
+}
+
 .courses{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: green;
+    align-items: center;
+    background-color: grey;
 }
 
+  .image-container {
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    display: block;
+  }
 
-.service_container{
-    margin: 2rem 4.5rem 0  4.5rem;
+  #features-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 3.5rem 0px 3.5rem;
+    text-align: center;
+  }
+  
+  .feature {
+    margin: 0px 1rem 2rem 1rem;
+    background-color: white;
+    max-width: 30%;
+  }
+  
+  .feature .image-container {
+    margin: 0 auto;
+  }
+  
+  .description{
+      display: block;
+  }
+
+.content .uppercase{
+    padding-top: 0.5rem;
+}
+
+.feature .content{
+    margin: 1rem;
+}
+
+#thesis{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thesis_content{
     display: flex;
 }
 
-service{
-    height: 2rem;
+.thesis_content h3{
+    margin: 1.5rem 0;
 }
+
+.feature .description{
+    margin-top: 0.5rem;
+}
+
+span{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    height: 5rem;
+}
+
+footer a{
+    margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .desktop_nav{
+        display:none;
+    }
+    .logo{
+        display: none;
+    }
+
+    .mobile_nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .banner{
+        padding: 0;
+        margin: 0;
+    }
+    .banner{
+        display:flex;
+        flex-direction: column;
+    }
+    .sixty{
+        width: 100%;
+        margin: 0;
+    }
+    .forty{
+        width: 100%;
+        margin: 0;
+    }
+    .slogan{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .btn{
+        width: 100%;
+    }
+    .start{
+        display: none;
+    }
+    .post{
+        flex-direction: column;
+    }
+
+    .image_container{
+        display: none;
+    }
+
+    .mobile_image_container{
+        display: block;
+        width: 100%;
+    }
+
+    .post_content{
+        padding: 4rem 2rem;
+    }
+
+    .post:last-child{
+        background-color: white;
+    }
+
+    .courses{
+        display: none;
+    }
+
+    .courses_mobile{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+
+    .courses_mobile h2{
+        margin-bottom: 2rem;
+    }
+
+    .mobile_course_section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile_course{
+        background-color: lightgray;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    #thesis .small_posts{
+        display: none;
+    }
+
+    #thesis .big_post h3, #thesis .big_post p{
+        display: none;
+    }
+
+    #thesis h2{
+        margin-bottom: 2rem;
+    }
+
+    #thesis{
+        margin-bottom: 1.5rem;
+    }
+  }
