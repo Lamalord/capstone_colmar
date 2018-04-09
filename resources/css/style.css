@@ -7,6 +7,37 @@
 
 html{
     font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, span, p {
+    opacity: 0.75;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+nav a{
+    color: black;
+}
+
+.desktop_nav {
+    font-size: 1.5rem;
 }
 
 .uppercase{
@@ -48,6 +79,9 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    position: fixed;    
+    z-index: 1;
 }
 
 .logo{
@@ -56,6 +90,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 nav{
@@ -64,15 +99,28 @@ nav{
 
 nav a{
     padding: 0.5rem;
+    margin-left: 1rem;
+    background-color: #eaece5;
+    border-radius: 0.8;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    background-color: #3b3a30;
+    color: white;
 }
 
 .mobile_nav{
     display: none;
 }
 
+.offset{
+    position: relative;
+    top: 4rem;
+}
 
 .banner{
-    background-color: grey;
+    background-color: #3b3a30;
 }
 
 .container{
@@ -94,18 +142,30 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .slogan *{
     width: 75%;
-    margin: 2rem 0;
+    margin: 2rem auto;
 }
 
 .btn{
-    background-color: black;
-    padding: 0.5rem 0;
+    background-color: #9fa9a3;
+    padding: 1rem 0;
     text-align: center;
-    color: white;
+    font-size: 2rem;
+    transition: all 1s;
+}
+
+.btn:hover{
+    padding: 2.5rem;
+    width: 90%;
+    font-size: 2.5rem;
+}
+
+.btn a{
+    color: black;
 }
 
 .author{
@@ -120,6 +180,7 @@ video {
     overflow: hidden;
 }
 
+
 /* Small posts */
 
 .small_posts{
@@ -129,6 +190,16 @@ video {
 
 .post {
     display: flex;
+}
+
+.post:hover{
+    background-color: #f0f0f0;
+    transition: all 1s;
+}
+
+.post a:hover{
+    text-decoration: underline;
+    transition: all 1s;
 }
 
 .image_container{
@@ -147,13 +218,33 @@ video {
     justify-content: center;
 }
 
+
 .post_content *{
     width: 85%;
-    margin: 0.3rem 0;
+    margin: 0.75rem 0;
+}
+
+.post_content span{
+    font-size: 1.25rem;
+}
+
+.post_content a{
+    color: blue;
+    font-size: 1.5rem;
 }
 
 .post:last-child{
-    background-color: grey;
+    background-color: #b2c2bf;
+}
+
+.post:last-child:hover{
+        background-color: #f0f0f0;
+        transition: all 1s;
+}
+
+.post:last-child a:hover{
+    text-decoration: underline;
+    transition: all 1s;
 }
 
 /* Courses section */
@@ -167,7 +258,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #b2c2bf;
 }
 
   .image-container {
@@ -191,6 +282,17 @@ video {
     background-color: white;
     max-width: 30%;
   }
+
+
+.feature:hover{
+    background-color: #f0f0f0;
+    transition: all 1s;
+    
+}
+
+  .feature span{
+    font-size: 1.25rem;
+}
   
   .feature .image-container {
     margin: 0 auto;
@@ -201,7 +303,7 @@ video {
   }
 
 .content .uppercase{
-    padding-top: 0.5rem;
+    padding: 1rem;
 }
 
 .feature .content{
@@ -237,6 +339,8 @@ footer{
     align-items: center;
     padding: 1rem 1.5rem;
     height: 5rem;
+    font-size: 1rem;
+    background-color: #b2c2bf;
 }
 
 footer a{
@@ -300,6 +404,10 @@ footer a{
     .post_content{
         padding: 4rem 2rem;
     }
+
+.post_content a{
+    text-decoration: underline;
+}
 
     .post:last-child{
         background-color: white;
